@@ -5,6 +5,7 @@ import os
 from utils import util
 import torch
 
+
 class BaseOptions():
     def __init__(self):
         self.parser = argparse.ArgumentParser()

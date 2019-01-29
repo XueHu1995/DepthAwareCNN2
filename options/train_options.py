@@ -1,10 +1,11 @@
-### Copyright (C) 2017 NVIDIA Corporation. All rights reserved. 
-### Licensed under the CC BY-NC-SA 4.0 license (https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode).
+# Copyright (C) 2017 NVIDIA Corporation. All rights reserved.
+# Licensed under the CC BY-NC-SA 4.0 license (https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode).
 from .base_options import BaseOptions
+
 
 class TrainOptions(BaseOptions):
     def initialize(self):
-        BaseOptions.initialize(self)
+        BaseOptions.initialize(self)  # 继承父类
 
         # for displays
         self.parser.add_argument('--display_freq', type=int, default=100, help='frequency of showing training results on screen')
